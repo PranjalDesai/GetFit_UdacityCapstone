@@ -16,7 +16,7 @@ android {
         release {
             keyAlias 'key0'
             keyPassword 'Capstone123'
-            storeFile file('/Users/Pranjal/Desktop/GetFit/app/keystore/keystore')
+            storeFile file('../app/keystore/keystore')
             storePassword 'Capstone123'
         }
     }

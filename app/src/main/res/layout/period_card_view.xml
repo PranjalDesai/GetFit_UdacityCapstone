@@ -14,7 +14,8 @@
             android:id="@+id/period_fitness_icon"
             android:src="@drawable/water"
             android:layout_marginLeft="@dimen/sixteen"
-            android:layout_marginTop="@dimen/sixteen"/>
+            android:layout_marginTop="@dimen/sixteen"
+            android:contentDescription="@string/period_icon" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

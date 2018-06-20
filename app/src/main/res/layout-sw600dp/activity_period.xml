@@ -92,6 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
+        android:focusable="true"
         android:layout_marginRight="@dimen/thirty_six"
         android:layout_marginBottom="@dimen/thirty_six"
         android:backgroundTint="@color/colorRed"

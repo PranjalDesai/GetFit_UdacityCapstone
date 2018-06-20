@@ -20,7 +20,8 @@
             android:layout_width="@dimen/fifty_two"
             android:layout_height="62dp"
             android:layout_marginLeft="@dimen/twenty_four"
-            android:layout_marginTop="@dimen/twenty_four" />
+            android:layout_marginTop="@dimen/twenty_four"
+            android:contentDescription="@string/setting_icon" />
 
         <TextView
             android:id="@+id/setting_title"

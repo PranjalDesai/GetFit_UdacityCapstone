@@ -15,7 +15,8 @@
             android:id="@+id/nutrition_food_icon"
             android:src="@drawable/food"
             android:layout_marginLeft="@dimen/sixteen"
-            android:layout_marginTop="@dimen/sixteen"/>
+            android:layout_marginTop="@dimen/sixteen"
+            android:contentDescription="@string/nutrition_icon" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

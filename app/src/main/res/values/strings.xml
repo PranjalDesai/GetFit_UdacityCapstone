@@ -179,6 +179,13 @@
     <string name="total_push">Total Push Ups</string>
     <string name="active_time">Active time</string>
 
+    <string name="app_icon">GetFit app icon</string>
+    <string name="setting_icon">Setting row icon</string>
+    <string name="period_icon">Period card icon</string>
+    <string name="pushup_icon">Push Up card icon</string>
+    <string name="nutrition_icon">Nutritional food icon</string>
+    <string name="period_calendar_icon">Period calendar icon</string>
+
     <string-array name="setting_titles">
         <item>Clear History</item>
         <item>Permissions</item>

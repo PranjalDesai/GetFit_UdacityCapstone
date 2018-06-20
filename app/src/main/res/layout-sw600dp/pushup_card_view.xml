@@ -14,7 +14,8 @@
             android:id="@+id/pushup_fitness_icon"
             android:src="@drawable/ic_fitness"
             android:layout_marginLeft="@dimen/twenty_four"
-            android:layout_marginTop="@dimen/twenty_four"/>
+            android:layout_marginTop="@dimen/twenty_four"
+            android:contentDescription="@string/pushup_icon" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

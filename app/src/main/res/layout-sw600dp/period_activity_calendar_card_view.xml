@@ -19,7 +19,8 @@
             android:layout_marginTop="@dimen/sixteen"
             android:scaleType="fitCenter"
             android:layout_centerVertical="true"
-            android:src="@drawable/water" />
+            android:src="@drawable/water"
+            android:contentDescription="@string/period_calendar_icon" />
 
         <TextView
             android:id="@+id/period_calendar_title"

@@ -9,7 +9,8 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="@dimen/two_fifty"
-        android:src="@drawable/ic_fitness" />
+        android:src="@drawable/ic_fitness"
+        android:contentDescription="@string/pushup_icon" />
 
     <TextView
         android:layout_width="match_parent"
