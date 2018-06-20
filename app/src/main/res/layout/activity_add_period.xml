@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".AddPeriod"
+    android:id="@+id/period_details"
+    tools:ignore="MergeRootFrame">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme2.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize">
+        <ProgressBar
+            android:id="@+id/progressPeriodBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="@dimen/five"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorRed" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/period_date_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:text="@string/period_date"
+                    android:contentDescription="@string/period_date"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/period_date_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/period_date_title"
+                    android:layout_margin="@dimen/sixteen"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/calendar"
+                    android:paddingLeft="@dimen/sixteen"
+                    android:text="@string/select_start_date"
+                    android:contentDescription="@string/select_start_date"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteen_sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/period_last"
+                    android:contentDescription="@string/period_last"
+                    android:layout_below="@id/period_date_picker"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:textStyle="bold"
+                    android:id="@+id/period_length_period_title"
+                    android:layout_marginTop="@dimen/eight"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/sixteen"
+                    android:layout_below="@id/period_length_period_title"
+                    android:id="@+id/period_length_spinner"/>
+
+                <TextView
+                    android:id="@+id/period_flow_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/period_length_spinner"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:layout_marginTop="@dimen/eight"
+                    android:text="@string/flow_capital"
+                    android:contentDescription="@string/flow_capital"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/period_flow_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/period_flow_title"
+                    android:layout_margin="@dimen/sixteen"
+                    android:textAllCaps="false"
+                    android:background="@color/colorRedLight"
+                    android:drawableLeft="@drawable/water"
+                    android:paddingLeft="@dimen/sixteen_sp"
+                    android:paddingRight="@dimen/eight"
+                    android:paddingTop="@dimen/eight"
+                    android:paddingBottom="@dimen/eight"
+                    android:text="@string/select_flow"
+                    android:contentDescription="@string/select_flow"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteen_sp" />
+
+                <TextView
+                    android:id="@+id/period_mood_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/period_flow_picker"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:layout_marginTop="@dimen/eight"
+                    android:text="@string/mood_capital"
+                    android:contentDescription="@string/mood_capital"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/period_mood_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/period_mood_title"
+                    android:layout_margin="@dimen/sixteen"
+                    android:textAllCaps="false"
+                    android:background="@color/colorYellow"
+                    android:drawableLeft="@drawable/emoticon_happy"
+                    android:paddingLeft="@dimen/sixteen_sp"
+                    android:paddingRight="@dimen/eight"
+                    android:paddingTop="@dimen/eight"
+                    android:paddingBottom="@dimen/eight"
+                    android:text="@string/select_mood"
+                    android:contentDescription="@string/select_mood"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteen_sp" />
+
+                <TextView
+                    android:id="@+id/period_symptoms_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/period_mood_picker"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:layout_marginTop="@dimen/eight"
+                    android:text="@string/symptoms_capital"
+                    android:contentDescription="@string/symptoms_capital"
+                    android:textSize="@dimen/sixteen_sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/period_symptoms_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/period_symptoms_title"
+                    android:layout_margin="@dimen/sixteen"
+                    android:textAllCaps="false"
+                    android:background="@color/colorDeepPurple"
+                    android:drawableLeft="@drawable/thermometer"
+                    android:paddingLeft="@dimen/sixteen"
+                    android:paddingRight="@dimen/eight"
+                    android:paddingTop="@dimen/eight"
+                    android:paddingBottom="@dimen/eight"
+                    android:text="@string/select_symptoms"
+                    android:contentDescription="@string/select_symptoms"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteen_sp" />
+
+                <Button
+                    android:id="@+id/period_log_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/period_symptoms_picker"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/sixteen"
+                    android:background="@color/colorRed"
+                    android:padding="@dimen/eight"
+                    android:text="@string/submit"
+                    android:contentDescription="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteen_sp" />
+
+                <Button
+                    android:id="@+id/period_log_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/period_log_submit"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/eight"
+                    android:layout_marginTop="@dimen/eight"
+                    android:text="@string/cancel"
+                    android:contentDescription="@string/cancel"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sixteen_sp"
+                    style="@style/Widget.AppCompat.Button.Borderless" />
+
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

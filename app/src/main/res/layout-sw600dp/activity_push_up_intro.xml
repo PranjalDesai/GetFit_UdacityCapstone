@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PushUpIntro">
+
+    <TextView
+        android:id="@+id/pushup_intro_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginTop="@dimen/thirty_two"
+        android:textSize="@dimen/forty_eight"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/pushup_firsttime_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/eight"
+        android:layout_marginEnd="@dimen/thirty_two"
+        android:layout_marginStart="@dimen/thirty_two"
+        android:layout_marginTop="@dimen/eight"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/pushup_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pushup_intro_title">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/pushup_icon_layout"
+            android:layout_width="@dimen/three_hundered"
+            android:layout_height="@dimen/three_hundered"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/eight"
+            android:layout_marginEnd="@dimen/eight"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginTop="@dimen/eight"
+            android:backgroundTint="@color/colorPrimary"
+            android:elevation="@dimen/four"
+            app:cardCornerRadius="@dimen/one_fifty"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/thirty_two"
+                android:src="@drawable/ic_fitness" />
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/pushup_schedule_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/eight"
+        android:layout_marginEnd="@dimen/thirty_two"
+        android:layout_marginStart="@dimen/thirty_two"
+        android:layout_marginTop="@dimen/eight"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/pushup_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pushup_intro_title">
+
+        <include layout="@layout/pushup_set_data"/>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/pushup_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/hundred"
+        android:layout_marginEnd="@dimen/thirty_two"
+        android:layout_marginStart="@dimen/thirty_two"
+        android:paddingLeft="@dimen/sixteen"
+        android:paddingRight="@dimen/sixteen"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twenty_four_sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/intro_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sixteen"
+        android:layout_marginEnd="@dimen/thirty_two"
+        android:layout_marginStart="@dimen/thirty_two"
+        app:cardCornerRadius="@dimen/sixteen"
+        android:elevation="@dimen/four"
+        android:id="@+id/intro_continue"
+        android:backgroundTint="@color/colorGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_btn"
+            android:contentDescription="@string/continue_btn"
+            android:layout_margin="@dimen/sixteen"
+            android:textSize="@dimen/twenty_sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

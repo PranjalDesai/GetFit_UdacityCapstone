@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDeepPurple"
+    android:padding="@dimen/widget_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/widget_pushup_view">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/total_push_up"
+            android:contentDescription="@string/total_push_up"
+            android:layout_margin="@dimen/eight"
+            android:textSize="@dimen/eighteen_sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/widget_total_push_up"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/eight"
+            android:layout_marginLeft="@dimen/eight"
+            android:layout_marginBottom="@dimen/eight"
+            android:layout_marginRight="@dimen/thirty_two"
+            android:textSize="@dimen/eighteen_sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/widget_total_push_up"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

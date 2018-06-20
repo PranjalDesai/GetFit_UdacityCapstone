@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/firsttime_period"
+    tools:context=".FirstimePeriodActivity"
+    tools:ignore="MergeRootFrame">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme2.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/lets_start"
+                    android:contentDescription="@string/lets_start"
+                    android:layout_margin="@dimen/sixteen"
+                    android:padding="@dimen/eight"
+                    android:id="@+id/period_starter_title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twenty_sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/period_last_first"
+                    android:contentDescription="@string/period_last_first"
+                    android:layout_below="@id/period_starter_title"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:id="@+id/last_period_title"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/eight"/>
+
+                <Button
+                    android:id="@+id/last_period_date_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/last_period_title"
+                    android:layout_margin="@dimen/sixteen"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/calendar"
+                    android:paddingLeft="@dimen/sixteen"
+                    android:text="@string/select_date"
+                    android:contentDescription="@string/select_date"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sixteen_sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/period_long_first"
+                    android:contentDescription="@string/period_long_first"
+                    android:layout_below="@id/last_period_date_picker"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:id="@+id/period_length_period_title"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/eight"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/sixteen"
+                    android:layout_below="@id/period_length_period_title"
+                    android:id="@+id/period_length_spinner"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/period_cycle"
+                    android:contentDescription="@string/period_cycle"
+                    android:layout_below="@id/period_length_spinner"
+                    android:layout_marginLeft="@dimen/sixteen"
+                    android:id="@+id/period_cycle_period_title"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/eight"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/sixteen"
+                    android:layout_below="@id/period_cycle_period_title"
+                    android:id="@+id/period_cycle_spinner"/>
+
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <ProgressBar
+            android:id="@+id/progressBarFirstTime"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:indeterminateTint="@color/colorPrimary"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/period_firsttime_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/twenty_four"
+        android:layout_marginEnd="@dimen/twenty_four"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="@dimen/eight"
+        android:src="@drawable/check"
+        app:borderWidth="@dimen/zero"
+        app:layout_anchor="@+id/relativeLayout6"
+        app:layout_anchorGravity="right|bottom" />
+</android.support.design.widget.CoordinatorLayout>

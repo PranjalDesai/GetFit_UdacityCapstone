@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ninety_six"
+        android:id="@+id/pushup_label_container">
+        <ImageView
+            android:layout_width="@dimen/fifty_two"
+            android:layout_height="@dimen/fifty_two"
+            android:scaleType="fitCenter"
+            android:id="@+id/pushup_fitness_icon"
+            android:src="@drawable/ic_fitness"
+            android:layout_marginLeft="@dimen/twenty_four"
+            android:layout_marginTop="@dimen/twenty_four"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/thirty_two"
+            android:id="@+id/pushup_fitness_title"
+            android:layout_marginTop="@dimen/twenty_four"
+            android:textColor="@color/white"
+            android:text="@string/push_ups"
+            android:contentDescription="@string/push_ups"
+            android:textStyle="bold"
+            android:textSize="@dimen/twenty_two_sp"
+            android:layout_toRightOf="@id/pushup_fitness_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/thirty_two"
+            android:textSize="@dimen/sixteen_sp"
+            android:id="@+id/pushup_fitness_secondary"
+            android:textColor="@color/white"
+            android:layout_below="@id/pushup_fitness_title"
+            android:layout_toRightOf="@id/pushup_fitness_icon"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pushup_label_container">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sixteen"
+            android:id="@+id/pushup_total_container">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirty_two"
+                android:textSize="@dimen/sixteen_sp"
+                android:text="@string/total_push"
+                android:contentDescription="@string/total_push"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/thirty_two"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteen_sp"
+                android:maxWidth="@dimen/three_hundered"
+                android:id="@+id/pushup_total_done"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:layout_marginBottom="@dimen/sixteen"
+            android:layout_below="@id/pushup_total_container"
+            android:id="@+id/pushup_activetime_container">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/thirty_two"
+                android:textSize="@dimen/sixteen_sp"
+                android:text="@string/active_time"
+                android:contentDescription="@string/active_time"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/thirty_two"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteen_sp"
+                android:maxWidth="@dimen/three_hundered"
+                android:id="@+id/pushup_active_time"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:layout_marginBottom="@dimen/twenty_four"
+            android:layout_below="@+id/pushup_activetime_container">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sixteen_sp"
+                android:layout_marginLeft="@dimen/thirty_two"
+                android:text="@string/calories_capital"
+                android:contentDescription="@string/calories_capital"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/thirty_two"
+                android:id="@+id/pushup_calories"
+                android:textSize="@dimen/sixteen_sp"
+                android:maxWidth="@dimen/three_hundered"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

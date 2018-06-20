@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pushup_feeling"
+    tools:context=".PushUpFeelingActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sixteen"
+        android:layout_marginEnd="@dimen/thirty_two"
+        android:layout_marginStart="@dimen/thirty_two"
+        android:visibility="visible"
+        android:id="@+id/pushup_schedule_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/easyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/sixteen"
+            android:backgroundTint="@color/colorGreen"
+            android:elevation="@dimen/four"
+            app:cardCornerRadius="@dimen/sixteen"
+            app:layout_constraintBottom_toTopOf="@+id/rightBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/easy_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/sixteen"
+                android:text="@string/too_easy"
+                android:contentDescription="@string/too_easy"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty_sp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/rightBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:elevation="@dimen/four"
+            app:cardCornerRadius="@dimen/sixteen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/right_button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/sixteen"
+                android:text="@string/right_for_me"
+                android:contentDescription="@string/right_for_me"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twenty_sp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/finish_pushup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginTop="@dimen/thirty_two"
+        android:text="@string/training"
+        android:contentDescription="@string/training"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/forty_eight"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/homeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/thirty_two"
+        android:layout_marginEnd="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        android:backgroundTint="@color/colorGreen"
+        android:elevation="@dimen/four"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/sixteen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/home_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/eight"
+            android:text="@string/home"
+            android:contentDescription="@string/home"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty_sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/finish_pushup_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/eight"
+        android:layout_marginEnd="@dimen/twenty_four"
+        android:layout_marginStart="@dimen/twenty_four"
+        android:layout_marginTop="@dimen/eight"
+        android:gravity="center"
+        android:padding="@dimen/twenty_four"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twenty_four_sp"
+        android:textStyle="bold"
+        android:text="@string/firsttime_test"
+        android:contentDescription="@string/firsttime_test"
+        app:layout_constraintBottom_toTopOf="@+id/pushup_schedule_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finish_pushup_title" />
+
+    <ProgressBar
+        android:id="@+id/progressBarDifficulty"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/eight"
+        android:layout_marginEnd="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        android:backgroundTint="@color/colorRed"
+        android:layout_marginTop="@dimen/eight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/appIntro2BottomBarHeight"
+        android:id="@+id/main_layout">
+
+    <TextView
+        android:id="@+id/signin_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:paddingLeft="@dimen/thirty_two"
+        android:paddingRight="@dimen/thirty_two"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/twenty_eight_sp"
+        android:textStyle="bold"
+        android:text="@string/snackbar_sign_in"
+        android:contentDescription="@string/snackbar_sign_in"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/signin_button"
+            android:layout_width="@dimen/two_hundered"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+        <ProgressBar
+            android:id="@+id/accountCreationProgressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:id="@+id/gender_selection2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/gender2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/gender_title"
+                android:contentDescription="@string/gender_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/twenty_sp"
+                android:textStyle="bold" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fourty">
+
+                <io.ghyeok.stickyswitch.widget.StickySwitch
+                    android:id="@+id/gender_toggle2"
+                    android:layout_width="@dimen/two_hundered"
+                    android:layout_height="@dimen/eighty_five"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    app:ss_animationDuration="600"
+                    app:ss_animationType="line"
+                    app:ss_iconPadding="@dimen/eighteen"
+                    app:ss_iconSize="@dimen/twenty_two"
+                    app:ss_leftIcon="@drawable/human_male"
+                    app:ss_leftText="Male"
+                    app:ss_rightIcon="@drawable/human_female"
+                    app:ss_rightText="Female"
+                    app:ss_selectedTextSize="@dimen/fourteen_sp"
+                    app:ss_sliderBackgroundColor="@color/colorPrimary"
+                    app:ss_switchColor="@color/colorRed"
+                    app:ss_textColor="@color/white"
+                    app:ss_textSize="@dimen/twelve_sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/signin_description"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sixteen_sp"
+            android:contentDescription="@string/intro_four_description"
+            android:text="@string/intro_four_description"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/eight"
+        android:src="@drawable/check"
+        android:id="@+id/signin_finish"
+        android:backgroundTint="@color/colorRed"
+        app:borderWidth="@dimen/zero"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/twenty_four"
+        android:layout_marginEnd="@dimen/twenty_four" />
+
+
+</RelativeLayout>

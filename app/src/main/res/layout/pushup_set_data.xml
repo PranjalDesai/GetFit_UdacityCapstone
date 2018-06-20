@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/pushup_description_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/eight"
+        android:layout_marginTop="@dimen/eight"
+        android:text="@string/total_zero"
+        android:contentDescription="@string/total_zero"
+        android:textSize="@dimen/eighteen_sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="@dimen/eight"
+        app:layout_constraintBottom_toBottomOf="@+id/sets_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sets_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sixteen"
+        android:layout_marginTop="@dimen/eight"
+        android:text="@string/set_today"
+        android:contentDescription="@string/set_today"
+        android:textSize="@dimen/eighteen_sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="@dimen/eight"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/first_pushup_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginTop="@dimen/eight"
+            android:gravity="center"
+            android:padding="@dimen/eight"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/second_pushup_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginTop="@dimen/eight"
+            android:gravity="center"
+            android:padding="@dimen/eight"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/first_pushup_day"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/three_pushup_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginTop="@dimen/eight"
+            android:gravity="center"
+            android:padding="@dimen/eight"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/second_pushup_day"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fourth_pushup_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginTop="@dimen/eight"
+            android:gravity="center"
+            android:padding="@dimen/eight"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/three_pushup_day"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fifth_pushup_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight"
+            android:layout_marginEnd="@dimen/eight"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_marginTop="@dimen/eight"
+            android:gravity="center"
+            android:padding="@dimen/eight"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eighteen_sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fourth_pushup_day"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/settingView"
+    android:layout_height="match_parent"
+    tools:context=".SettingFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/setting_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/thirty_two"
+        android:layout_marginStart="@dimen/thirty_two"
+        android:layout_marginTop="@dimen/thirty_two"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="@dimen/four_hundered"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginTop="@dimen/sixteen"
+        android:background="@color/white"
+        android:text="@string/sign_out"
+        android:contentDescription="@string/sign_out"
+        android:drawableLeft="@drawable/ic_google_logo"
+        android:drawablePadding="@dimen/twelve"
+        android:paddingLeft="@dimen/twelve"
+        android:elevation="@dimen/four"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_recycler_view" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="@dimen/four_hundered"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/eight"
+        android:layout_marginStart="@dimen/eight"
+        android:layout_marginTop="@dimen/sixteen"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_recycler_view"/>
+
+</android.support.constraint.ConstraintLayout>

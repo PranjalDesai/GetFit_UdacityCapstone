@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="@dimen/two_sixty_five"
+    android:background="#673ab7"
+    android:maxHeight="@dimen/two_sixty_five"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seventy_two"
+        android:id="@+id/nutrition_label_container">
+        <ImageView
+            android:layout_width="@dimen/fourty"
+            android:layout_height="@dimen/fourty"
+            android:scaleType="fitCenter"
+            android:id="@+id/nutrition_food_icon"
+            android:src="@drawable/food"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:layout_marginTop="@dimen/sixteen"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/thirty_two"
+            android:id="@+id/nutrition_food_title"
+            android:layout_marginTop="@dimen/sixteen"
+            android:textColor="@color/white"
+            android:text="@string/nutrition"
+            android:contentDescription="@string/nutrition"
+            android:textStyle="bold"
+            android:textSize="@dimen/eighteen_sp"
+            android:layout_toRightOf="@id/nutrition_food_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/thirty_two"
+            android:id="@+id/nutrition_food_secondary"
+            android:textColor="@color/white"
+            android:layout_below="@id/nutrition_food_title"
+            android:layout_toRightOf="@id/nutrition_food_icon"/>
+
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/nutritionChart"
+        android:layout_below="@id/nutrition_label_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_ninety_three"
+        android:layout_marginBottom="@dimen/sixteen"
+        android:layout_marginLeft="@dimen/sixteen"
+        android:layout_marginRight="@dimen/sixteen"/>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/period_activity"
+    tools:context=".PeriodActivity"
+    tools:ignore="MergeRootFrame">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme2.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/month_name_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorOrange"
+            android:gravity="center"
+            android:padding="@dimen/sixteen"
+            android:text="@string/month"
+            android:contentDescription="@string/month"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty_sp"
+            android:textStyle="bold" />
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/compactcalendar_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/two_fifty"
+            android:layout_below="@id/month_name_period"
+            android:paddingLeft="@dimen/ten"
+            android:paddingRight="@dimen/ten"
+            app:compactCalendarBackgroundColor="@color/colorOrange"
+            app:compactCalendarCurrentDayBackgroundColor="@color/colorOrangeDark"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="@color/colorOrangeLight"
+            app:compactCalendarMultiEventIndicatorColor="@color/white"
+            app:compactCalendarTargetHeight="@dimen/two_fifty"
+            app:compactCalendarTextColor="@color/white"
+            app:compactCalendarTextSize="@dimen/twelve_sp" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/compactcalendar_view"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:layout_marginRight="@dimen/sixteen">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/period_card_calendar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/twenty_four"
+                    android:elevation="@dimen/four"
+                    android:visibility="gone"
+                    app:cardCornerRadius="@dimen/twenty"
+                    app:cardElevation="@dimen/four">
+
+                    <include layout="@layout/period_activity_calendar_card_view" />
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/periodFloatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginRight="@dimen/eight"
+        android:layout_marginBottom="@dimen/eight"
+        android:backgroundTint="@color/colorRed"
+        app:layout_anchor="@+id/relativeLayout2"
+        app:layout_anchorGravity="right|bottom"
+        app:srcCompat="@drawable/plus" />
+
+</android.support.design.widget.CoordinatorLayout>

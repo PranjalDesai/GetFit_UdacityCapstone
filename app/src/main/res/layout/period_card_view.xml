@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRed"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seventy_two"
+        android:id="@+id/period_label_container">
+        <ImageView
+            android:layout_width="@dimen/fourty"
+            android:layout_height="@dimen/fourty"
+            android:scaleType="fitCenter"
+            android:id="@+id/period_fitness_icon"
+            android:src="@drawable/water"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:layout_marginTop="@dimen/sixteen"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/thirty_two"
+            android:id="@+id/period_fitness_title"
+            android:layout_marginTop="@dimen/sixteen"
+            android:textColor="@color/white"
+            android:text="@string/period_title"
+            android:contentDescription="@string/period_title"
+            android:textStyle="bold"
+            android:textSize="@dimen/eighteen_sp"
+            android:layout_toRightOf="@id/period_fitness_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/thirty_two"
+            android:id="@+id/period_fitness_secondary"
+            android:textColor="@color/white"
+            android:layout_below="@id/period_fitness_title"
+            android:layout_toRightOf="@id/period_fitness_icon"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/period_label_container">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/eight"
+            android:id="@+id/period_date_container">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteen"
+                android:text="@string/period_date"
+                android:contentDescription="@string/period_date"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/sixteen"
+                android:textColor="@color/white"
+                android:maxWidth="@dimen/one_seventy_five"
+                android:gravity="right"
+                android:id="@+id/period_date"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:layout_marginBottom="@dimen/eight"
+            android:layout_below="@id/period_date_container"
+            android:id="@+id/period_mood_container">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteen"
+                android:text="@string/mood_capital"
+                android:contentDescription="@string/mood_capital"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/sixteen"
+                android:textColor="@color/white"
+                android:gravity="right"
+                android:id="@+id/period_mood"
+                android:maxWidth="@dimen/one_seventy_five"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/eight"
+        android:layout_marginBottom="@dimen/eight"
+        android:layout_below="@+id/period_mood_container"
+            android:id="@+id/period_flow_container">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="@string/flow_capital"
+            android:contentDescription="@string/flow_capital"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/one_seventy_five"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/sixteen"
+            android:id="@+id/period_flow"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight"
+            android:layout_marginBottom="@dimen/sixteen"
+            android:layout_below="@+id/period_flow_container">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteen"
+                android:text="@string/symptoms_capital"
+                android:contentDescription="@string/symptoms_capital"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:maxWidth="@dimen/one_seventy_five"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/sixteen"
+                android:id="@+id/period_symptoms"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

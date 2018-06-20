@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/fitness_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FitnessFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/thirty_two"
+        android:layout_marginRight="@dimen/thirty_two">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/thirty_two">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/four"
+                android:id="@+id/pushup_card"
+                android:layout_marginTop="@dimen/twenty_four"
+                app:cardCornerRadius="@dimen/twenty"
+                app:cardElevation="@dimen/four">
+                <include layout="@layout/fitness_pushup_card"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/four"
+                android:visibility="visible"
+                android:id="@+id/period_card"
+                android:layout_marginTop="@dimen/twenty_four"
+                app:cardCornerRadius="@dimen/twenty"
+                app:cardElevation="@dimen/four">
+                <include layout="@layout/fitness_period_card"/>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <ProgressBar
+        android:id="@+id/progressBarFitness"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminateTint="@color/colorYellow"
+        android:backgroundTintMode="@color/colorYellow"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

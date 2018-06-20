@@ -1,0 +1,295 @@
+<resources>
+    <string name="app_name">GetFit</string>
+    <string name="app_version">1.0.0</string>
+    <string name="packageName">com.pranjaldesai.getfit</string>
+    <string name="onboarding_wizard">OnboardingWizard</string>
+    <string name="widget_pushup">WidgetPushUps</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_fitness">Fitness</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_diary">Diary</string>
+
+    <string name="intro_one_title">Welcome to GetFit</string>
+    <string name="intro_two_title">Permissions</string>
+    <string name="intro_one_description">Your personal coach to a healthier lifestyle.</string>
+    <string name="intro_two_description">Please press the next button and \"Allow\" permissions for an enhanced experience.</string>
+    <string name="intro_three_description">This keeps track of your workout activity and performs backups</string>
+    <string name="snackbar_sign_in">Please Sign-In</string>
+    <string name="something_went_wrong">Something went wrong. Please restart app.</string>
+    <string name="collections_user">users</string>
+    <string name="collections_activity">activities</string>
+    <string name="collections_pushups">pushups</string>
+    <string name="collections_period">period</string>
+    <string name="user_name">name</string>
+    <string name="user_email">email</string>
+    <string name="gender_title">Gender</string>
+    <string name="user_phoneNumber">phoneNumber</string>
+    <string name="user_url">photoUrl</string>
+    <string name="user_uid">uid</string>
+    <string name="select_start_date">SELECT START DATE</string>
+    <string name="select_date">SELECT DATE</string>
+    <string name="select_flow">SELECT FLOW</string>
+    <string name="select_mood">SELECT MOOD</string>
+    <string name="select_symptoms">SELECT SYMPTOMS</string>
+    <string name="user_gender">gender</string>
+    <string name="authentication_fail">Authentication Failed.</string>
+    <string name="intro_four_title">About You</string>
+    <string name="intro_four_description">Information about you will help us decide what content to show you.</string>
+    <string name="authentication_success">Thanks connecting to Google Fit! :)</string>
+
+
+    <string name="googleFit">GoogleFit</string>
+    <string name="activetime">activetime</string>
+    <string name="caloriecount">caloriecount</string>
+    <string name="fat">Fat (g)</string>
+    <string name="carb">Carbs (g)</string>
+    <string name="protein">Protein (g)</string>
+    <string name="calorie_consumed">"Total Calories consumed: "</string>
+    <string name="totalDone">totalDone</string>
+    <string name="time">time</string>
+
+
+    <string name="log_period">Log Period</string>
+    <string name="please_select_date">Please select date</string>
+    <string name="please_select_period_length">Please select period length</string>
+    <string name="please_select_period_cycle">Please select period cycle</string>
+    <string name="please_select_flow">Please select flow</string>
+    <string name="please_select_mood">Please select mood</string>
+    <string name="please_select_symptoms">Please select symptoms</string>
+    <string name="last_period">last_period</string>
+    <string name="periodLength">periodLength</string>
+    <string name="periodCycleLength">periodCycleLength</string>
+    <string name="date">date</string>
+    <string name="flow">flow</string>
+    <string name="mood">mood</string>
+    <string name="symptoms">symptoms</string>
+    <string name="light">Light</string>
+    <string name="medium">Medium</string>
+    <string name="heavy">Heavy</string>
+    <string name="select_flow_lower">Select Flow</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="normal">Normal</string>
+    <string name="happy">Happy</string>
+    <string name="frisky">Frisky</string>
+    <string name="mood_swings">Mood Swings</string>
+    <string name="angry">Angry</string>
+    <string name="sad">Sad</string>
+    <string name="panicky">Panicky</string>
+    <string name="select_mood_lower">Select Mood</string>
+    <string name="everything_fine">Everything is fine</string>
+    <string name="cramps">Cramps</string>
+    <string name="tender_breasts">Tender breasts</string>
+    <string name="headache">Headache</string>
+    <string name="acne">Acne</string>
+    <string name="backache">Backache</string>
+    <string name="nausea">Nausea</string>
+    <string name="fatigue">Fatigue</string>
+    <string name="bloating">Bloating</string>
+    <string name="cravings">Cravings</string>
+    <string name="insomnia">Insomnia</string>
+    <string name="constipation">Constipation</string>
+    <string name="diarrhea">Diarrhea</string>
+    <string name="select_symptoms_lower">Select Symptoms</string>
+
+    <string name="total_pushups">total_pushups</string>
+    <string name="pushup_level">pushup_level</string>
+    <string name="pushup_sub_level">pushup_sub_level</string>
+    <string name="period_tracker">Period Tracker</string>
+
+    <string name="pre_period">Pre-Period</string>
+    <string name="period_day">Period Day</string>
+    <string name="post_period">Post-Period</string>
+    <string name="pre_period_description">Expect the possibility of irritability, cramps and even a few tears. Periods are about to start.</string>
+    <string name="period_day_description">It\'s that time of the month again. This is also the official start of your cycle.</string>
+    <string name="post_period_description">Your bleeding has stopped or at least lightened up by now. Soon you will be ovulating.</string>
+    <string name="days">" Days"</string>
+
+    <string name="totalPushUps">totalPushUps</string>
+    <string name="peak_ovulation">Peak-Ovulation</string>
+    <string name="peak_ovulation_description">Your body is ready for ovulating. You\'re very fertile.</string>
+    <string name="currentLevel">currentLevel</string>
+    <string name="userPrimaryLevel">userPrimaryLevel</string>
+    <string name="total">"Total: "</string>
+    <string name="set_description">Here is your set for today. You are doing great! Keep up the good work!</string>
+    <string name="welcome_back">Welcome back, %1$s!</string>
+    <string name="test_description">Great work, you have been doing awesome. Let\'s do this!</string>
+    <string name="test_title">%1$s, Its time for a test!</string>
+    <string name="first_time_description">We will start with a test to gauge your level and provide a better push up schedule for you.</string>
+    <string name="lets_start">Lets get started, %1$s!</string>
+
+    <string name="numberOfPushUp">numberOfPushUp</string>
+    <string name="training">Training</string>
+    <string name="pushup_set_title">Push Up Sets</string>
+    <string name="firsttime_test">The training plan is divided into multiple levels. We will reevaluate your physical ability after each level.</string>
+    <string name="set_finished">The app adjusts the exercise based on the number of push ups you completed.</string>
+    <string name="firstTimeTest">firstTimeTest</string>
+
+    <string name="complete_activity">COMPLETE ACTIVITY</string>
+    <string name="skip_rest">SKIP REST</string>
+    <string name="sign_in">Sign In</string>
+    <string name="clear_data_subtitle">This clears all your data so far.</string>
+    <string name="enabled_subtitle">"You have enabled "</string>
+    <string name="googlefit_subtitle">"Google fit is "</string>
+    <string name="version_subtitle">"Version "</string>
+    <string name="permission_subtitle">" permissions"</string>
+    <string name="clear_data_snackbar">All History Deleted</string>
+    <string name="error_snackbar">Something went wrong, error occurred! :(</string>
+    <string name="yes_positiveBtn">Yes</string>
+    <string name="clear_data_description">This will delete all your data on the app. This action cannot be undone. Are you sure you want to delete?</string>
+    <string name="permission_description">This will navigate you to permission settings page. Are you sure you want to go there?</string>
+    <string name="google_fit_enabled_description">Google Fit is enabled so they it syncs data. Do you want to disable it?</string>
+    <string name="disable_positiveBtn">Disable</string>
+    <string name="google_fit_disabled_description">Google Fit is disabled. Would you like to enable if so it can sync data?</string>
+    <string name="enable_positiveBtn">Enable</string>
+    <string name="close_positiveBtn">Close</string>
+    <string name="about_me_description">\nArtwork by FreePik\nCreated by Pranjal Desai</string>
+
+
+    <string name="period_date">Period Date</string>
+    <string name="period_last">How long did your period last?</string>
+    <string name="flow_capital">Flow</string>
+    <string name="mood_capital">Mood</string>
+    <string name="symptoms_capital">Symptoms</string>
+    <string name="submit">Submit</string>
+
+    <string name="period_last_first">When was your last period?</string>
+    <string name="period_long_first">How long does your period last?</string>
+    <string name="period_cycle">How long does your period cycle?</string>
+
+    <string name="total_push_up">Total Push Ups:</string>
+    <string name="month">Month</string>
+    <string name="too_easy">TOO EASY FOR ME</string>
+    <string name="right_for_me">THIS WAS RIGHT FOR ME</string>
+    <string name="home">HOME</string>
+    <string name="continue_btn">Continue</string>
+    <string name="zero">0</string>
+    <string name="please_rest">Please Rest</string>
+    <string name="period">Periods</string>
+
+    <string name="push_ups">Push Ups</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="period_title">Period</string>
+
+    <string name="period_description">Period Description</string>
+    <string name="total_zero">Total: 0</string>
+    <string name="set_today">Sets for today</string>
+    <string name="calories_capital">Calories</string>
+    <string name="total_push">Total Push Ups</string>
+    <string name="active_time">Active time</string>
+
+    <string-array name="setting_titles">
+        <item>Clear History</item>
+        <item>Permissions</item>
+        <item>Google Fit</item>
+        <item>About GetFit</item>
+    </string-array>
+
+    <string-array name="period_length_days">
+        <item>Select Days</item>
+        <item>2 Days</item>
+        <item>3 Days</item>
+        <item>4 Days</item>
+        <item>5 Days</item>
+        <item>6 Days</item>
+        <item>7 Days</item>
+        <item>8 Days</item>
+        <item>9 Days</item>
+        <item>10 Days</item>
+    </string-array>
+
+    <string-array name="period_cycle_days">
+        <item>Select Days</item>
+        <item>17 Days</item>
+        <item>18 Days</item>
+        <item>19 Days</item>
+        <item>20 Days</item>
+        <item>21 Days</item>
+        <item>22 Days</item>
+        <item>23 Days</item>
+        <item>24 Days</item>
+        <item>25 Days</item>
+        <item>26 Days</item>
+        <item>27 Days</item>
+        <item>28 Days</item>
+        <item>29 Days</item>
+        <item>30 Days</item>
+        <item>31 Days</item>
+        <item>32 Days</item>
+        <item>33 Days</item>
+        <item>34 Days</item>
+        <item>35 Days</item>
+        <item>36 Days</item>
+        <item>37 Days</item>
+        <item>38 Days</item>
+        <item>39 Days</item>
+        <item>40 Days</item>
+        <item>41 Days</item>
+        <item>42 Days</item>
+        <item>43 Days</item>
+        <item>44 Days</item>
+        <item>45 Days</item>
+    </string-array>
+
+    <string-array name="pushup_levels">
+        <item>Select level</item>
+        <item>2&#8211;2&#8211;2&#8211;2&#8211;3</item>
+        <item>6&#8211;6&#8211;5&#8211;4&#8211;5</item>
+        <item>9&#8211;9&#8211;8&#8211;6&#8211;7</item>
+        <item>4&#8211;3&#8211;2&#8211;2&#8211;4</item>
+        <item>8&#8211;8&#8211;6&#8211;5&#8211;7</item>
+        <item>11&#8211;11&#8211;9&#8211;9&#8211;10</item>
+        <item>5&#8211;4&#8211;4&#8211;3&#8211;5</item>
+        <item>9&#8211;8&#8211;8&#8211;5&#8211;9</item>
+        <item>14&#8211;12&#8211;10&#8211;10&#8211;14</item>
+        <item>4&#8211;4&#8211;3&#8211;3&#8211;5</item>
+        <item>8&#8211;7&#8211;5&#8211;4&#8211;6</item>
+        <item>11&#8211;11&#8211;8&#8211;6&#8211;9</item>
+        <item>6&#8211;5&#8211;3&#8211;3&#8211;6</item>
+        <item>10&#8211;8&#8211;6&#8211;7&#8211;9</item>
+        <item>15&#8211;10&#8211;10&#8211;10&#8211;14</item>
+        <item>5&#8211;5&#8211;4&#8211;4&#8211;6</item>
+        <item>9&#8211;9&#8211;7&#8211;7&#8211;9</item>
+        <item>14&#8211;14&#8211;11&#8211;11&#8211;14</item>
+        <item>14&#8211;11&#8211;11&#8211;9&#8211;14</item>
+        <item>18&#8211;13&#8211;13&#8211;11&#8211;18</item>
+        <item>23&#8211;15&#8211;15&#8211;13&#8211;23</item>
+        <item>15&#8211;13&#8211;13&#8211;11&#8211;14</item>
+        <item>20&#8211;15&#8211;13&#8211;13&#8211;18</item>
+        <item>25&#8211;17&#8211;17&#8211;13&#8211;23</item>
+        <item>19&#8211;14&#8211;14&#8211;14&#8211;15</item>
+        <item>23&#8211;17&#8211;17&#8211;15&#8211;20</item>
+        <item>28&#8211;20&#8211;20&#8211;18&#8211;25</item>
+        <item>14&#8211;11&#8211;11&#8211;9&#8211;14</item>
+        <item>20&#8211;14&#8211;14&#8211;12&#8211;20</item>
+        <item>25&#8211;18&#8211;18&#8211;15&#8211;25</item>
+        <item>14&#8211;12&#8211;12&#8211;10&#8211;13</item>
+        <item>20&#8211;15&#8211;15&#8211;13&#8211;18</item>
+        <item>25&#8211;19&#8211;19&#8211;16&#8211;23</item>
+        <item>18&#8211;13&#8211;13&#8211;13&#8211;16</item>
+        <item>23&#8211;17&#8211;17&#8211;15&#8211;22</item>
+        <item>28&#8211;20&#8211;20&#8211;18&#8211;27</item>
+        <item>28&#8211;22&#8211;20&#8211;18&#8211;28</item>
+        <item>33&#8211;26&#8211;23&#8211;20&#8211;33</item>
+        <item>36&#8211;28&#8211;26&#8211;21&#8211;36</item>
+        <item>13&#8211;12&#8211;10&#8211;8&#8211;28</item>
+        <item>15&#8211;14&#8211;12&#8211;10&#8211;33</item>
+        <item>16&#8211;14&#8211;11&#8211;10&#8211;36</item>
+        <item>10&#8211;10&#8211;8&#8211;7&#8211;28</item>
+        <item>14&#8211;12&#8211;10&#8211;8&#8211;33</item>
+        <item>14&#8211;12&#8211;10&#8211;8&#8211;36</item>
+        <item>36&#8211;31&#8211;28&#8211;26&#8211;38</item>
+        <item>46&#8211;36&#8211;32&#8211;34&#8211;46</item>
+        <item>52&#8211;41&#8211;38&#8211;36&#8211;52</item>
+        <item>18&#8211;16&#8211;13&#8211;11&#8211;38</item>
+        <item>21&#8211;18&#8211;18&#8211;14&#8211;46</item>
+        <item>26&#8211;21&#8211;21&#8211;18&#8211;52</item>
+        <item>20&#8211;17&#8211;15&#8211;14&#8211;42</item>
+        <item>23&#8211;20&#8211;20&#8211;16&#8211;50</item>
+        <item>27&#8211;23&#8211;23&#8211;20&#8211;56</item>
+    </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+</resources>
