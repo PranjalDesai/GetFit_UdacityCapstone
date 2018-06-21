@@ -26,9 +26,9 @@
   
 # Libraries Used
   - [Collapsible Calendar][link_1]
-  - [Glide] [link_2]
-  - [Sticky Switch] [link_3]
-  - [ButterKnife] [link_4]
+  - [Glide][link_2]
+  - [Sticky Switch][link_3]
+  - [ButterKnife][link_4]
   - [CircleImageView][link_5]
   - [App Intro][link_6]
   - [MPAndroid Chart][link_7]
