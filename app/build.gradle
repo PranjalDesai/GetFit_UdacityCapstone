@@ -14,10 +14,10 @@ android {
 
     signingConfigs {
         release {
-            keyAlias 'key0'
-            keyPassword 'Capstone123'
+            keyAlias ''
+            keyPassword ''
             storeFile file('../app/keystore/keystore')
-            storePassword 'Capstone123'
+            storePassword ''
         }
     }
 
