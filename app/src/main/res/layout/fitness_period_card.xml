@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/two_fifty"
+        android:layout_height="@dimen/@dimen/two_fifty_dp"
         android:src="@drawable/water"
         android:contentDescription="@string/period_icon" />
 

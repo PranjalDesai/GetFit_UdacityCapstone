@@ -34,7 +34,7 @@
     <dimen name="twenty_eight_sp">28sp</dimen>
 
     <dimen name="two_hundered">200dp</dimen>
-    <dimen name="two_fifty">250dp</dimen>
+    <dimen name="two_fifty_dp">250dp</dimen>
     <dimen name="seventy_two">72dp</dimen>
     <dimen name="forty_eight">48dp</dimen>
     <dimen name="eighty_five">85dp</dimen>
@@ -72,6 +72,7 @@
     <dimen name="seventy_five">75dp</dimen>
     <dimen name="one_seventy_five">175dp</dimen>
     <dimen name="one">1dp</dimen>
+    <dimen name="one_eighty">180dp</dimen>
 
 
 </resources>
