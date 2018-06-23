@@ -7,6 +7,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.CountDownTimer;
+import android.os.SystemClock;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -85,6 +86,7 @@ public class PushUpTrackerActivity extends AppCompatActivity implements SensorEv
     private String extra, pushUpLevel;
     private boolean pushupTest;
     String[] pushupSets;
+    long mLastPushUpTime=0;
     CountDownTimer timer;
     private FirebaseAuth mAuth;
     FirebaseUser currentUser;
@@ -243,7 +245,10 @@ public class PushUpTrackerActivity extends AppCompatActivity implements SensorEv
         pushupCounter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                countUpButton();
+                if((SystemClock.elapsedRealtime()- mLastPushUpTime) >= 1000){
+                    countUpButton();
+                    mLastPushUpTime= SystemClock.elapsedRealtime();
+                }
             }
         });
     }
@@ -255,7 +260,10 @@ public class PushUpTrackerActivity extends AppCompatActivity implements SensorEv
 
                 if (proximitySensor != null) {
                     if(pushupTest) {
-                        pushupSetData();
+                        if((SystemClock.elapsedRealtime()-mLastPushUpTime) >= 1000) {
+                            pushupSetData();
+                            mLastPushUpTime= SystemClock.elapsedRealtime();
+                        }
                     }
                 }
             }
